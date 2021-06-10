@@ -1,5 +1,6 @@
 public class Polygon {
     private final int numberOfSides;
+
     private Renderer renderer;
 
     public Polygon(int numberOfSides) {
@@ -16,6 +17,10 @@ public class Polygon {
 
     public int getNumberOfSides() {
         return numberOfSides;
+    }
+
+    public Renderer getRenderer() {
+        return renderer;
     }
 
     public void draw() {
