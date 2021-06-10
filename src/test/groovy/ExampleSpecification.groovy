@@ -91,9 +91,9 @@ class ExampleSpecification extends Specification {
         Polygon polygon = shapeFactory.createDefaultPolygon()
 
         then:
-        with(polygon) {
+        verifyAll(polygon) {
             numberOfSides == 4
-            renderer == null
+            renderer == mockRenderer
         }
     }
 }
